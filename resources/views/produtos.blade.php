@@ -10,7 +10,7 @@
 
     <b>Preço</b><br>
     <input type="preco" name="preco"><br>
-    
+
     <b>Categoria</b><br>
     <input type="categoria" name="categoria"><br>
 
