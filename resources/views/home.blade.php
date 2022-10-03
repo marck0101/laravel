@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>teste</h1>
-    <div>
-        <h1>pagina e rotas funcionando</h1>
-        <h2>acessar produtos</h2>
-        <a href="/produtos"> produto</a>
+<h1>teste</h1>
 
-    </div>
-</body>
-</html>
+<h1>pagina inicial</h1>
+Meu nome é: <b>{{$usuario}}</b>
+<br>
+Meeu perfil é: <b>{{$perfil}}</b>
+<br>
+Minha empresa é: <b>{{$empresa}}</b>
