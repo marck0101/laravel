@@ -37,6 +37,9 @@ Route::get('/produtos/{nomeProduto}/comentario/{id}', function($nomeProduto, $id
     echo 'Esse é o comentario do "id" '  .$id. ' do produto: ' . $nomeProduto;
 });
 
+Route::get('/produtos/{produto1}/{id}', function($produto1, $id) {
+    echo 'Esse é o comentario do "id" '  .$id. ' do produto: ' . $produto1;
+});
 
 
 

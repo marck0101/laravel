@@ -10,6 +10,9 @@
     <h1>teste</h1>
     <div>
         <h1>pagina e rotas funcionando</h1>
+        <h2>acessar produtos</h2>
+        <a href="/produtos"> produto</a>
+
     </div>
 </body>
 </html>
