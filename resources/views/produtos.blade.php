@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Aqui tem produtos</h1>
-    <div>
-        produtos
-        produtos
-        produtos
-        produtos
-        produtos
-        produtos
-        produtos
-        produtos
-        produtos
-    </div>
-</body>
-</html>
+<h1>Aqui tem produtos</h1>
+<hr>
+
+<!-- para criar um formulario no Laravel precisa por o Csrf -->
+<form method="get">
+    @csrf
+
+    <b>Produto</b><br>
+    <input type="produto" name="produto"><br>
+
+    <b>Preço</b><br>
+    <input type="preco" name="preco"><br>
+
+    <b>Categoria</b><br>
+    <input type="categoria" name="categoria"><br>
+
+    <button type="submit">Salvar</button>
+
+</form>
+
+<hr>
+
+<label>Produto: {{$produto}}</label> <br>
+<label>Preco: {{$preco}}</label> <br>
+<label>Categoria: {{$categoria}}</label> <br>

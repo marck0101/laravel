@@ -1,38 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProdutoController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// algumas versões funciona assim
+// Route::get('/', 'HomeController@index');
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// Mas a que eu tenho instalada a sintexe precisa ser assim
+Route::get('/', [HomeController::class, 'index']);
 
-
-Route::get('/', function () {
-    return view('home');
-});
-
-// Route::view('/', 'home'); // tem uma forma facilitada
-
-Route::get('/produtos', function () {
-    return view('produtos');
-});
-
-// // no exemplo abaixo o id/variavel deve ser o parametro usado na fincao
-// Route::get('/produtos/{nomeProduto}', function($nomeProduto) { //pagina de um único produto, prouto em si
-//     echo 'Página de produtos:  '. $nomeProduto;
-// });
-
-Route::get('/produtos/{nomeProduto}/comentario/{id}', function ($nomeProduto, $id) {
-    echo 'Esse é o comentario do "id" '  . $id . ' do produto: ' . $nomeProduto;
-});
+Route::get('/produtos', [ProdutoController::class, 'index']);
