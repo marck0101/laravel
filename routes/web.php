@@ -18,13 +18,13 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', function() {
-   return view('home');
+Route::get('/', function () {
+    return view('home');
 });
 
 // Route::view('/', 'home'); // tem uma forma facilitada
 
-Route::get('/produtos', function() {
+Route::get('/produtos', function () {
     return view('produtos');
 });
 
@@ -33,12 +33,6 @@ Route::get('/produtos', function() {
 //     echo 'Página de produtos:  '. $nomeProduto;
 // });
 
-Route::get('/produtos/{nomeProduto}/comentario/{id}', function($nomeProduto, $id) {
-    echo 'Esse é o comentario do "id" '  .$id. ' do produto: ' . $nomeProduto;
+Route::get('/produtos/{nomeProduto}/comentario/{id}', function ($nomeProduto, $id) {
+    echo 'Esse é o comentario do "id" '  . $id . ' do produto: ' . $nomeProduto;
 });
-
-
-
-
-
-
