@@ -1,17 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProdutoController;
 
-// algumas versões funciona assim
-Route::get('/', 'HomeController@index');
+// Route::get('/', function () {
+//     $nome = 'Marcos';
 
-// Mas a que eu tenho instalada a sintexe precisa ser assim
-// Route::get('/', [HomeController::class, 'index']);
+//     return view('welcome', ['nome' => $nome]);
+// });
 
-// Route::get('/produtos', [ProdutoController::class, 'index']);
+Route::get('/', function () {
+    $nome = 'Marcos';
 
-// Route::post('/produtos', [ProdutoController::class, 'index']);
-
-// Route::get('/produtos/excluir{id}', [ProdutoController::class, 'excluir']);
+    return view('welcome2', ['nome' => $nome]);
+});
