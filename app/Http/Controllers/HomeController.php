@@ -27,4 +27,4 @@ class HomeController extends Controller
 
 
 //  para ter criaddo esse controller foi cigitado no terminal
-//  php artisan make:controller HomeController 
+//  php artisan make:controller HomeController

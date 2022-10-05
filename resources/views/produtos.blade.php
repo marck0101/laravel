@@ -2,7 +2,7 @@
 <hr>
 
 <!-- para criar um formulario no Laravel precisa por o Csrf -->
-<form method="get">
+<form method="post">
     @csrf
 
     <b>Produto</b><br>
@@ -20,6 +20,6 @@
 
 <hr>
 
-<label>Produto: {{$produto}}</label> <br>
-<label>Preco: {{$preco}}</label> <br>
-<label>Categoria: {{$categoria}}</label> <br>
+<label>Produto: {{ $produto }}</label> <br>
+<label>Preco: {{ $preco }}</label> <br>
+<label>Categoria: {{ $categoria }}</label> <br>

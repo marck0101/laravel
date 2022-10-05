@@ -11,3 +11,6 @@ use App\Http\Controllers\ProdutoController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/produtos', [ProdutoController::class, 'index']);
+
+Route::post('/produtos', [ProdutoController::class, 'index']);
+Route::post('/produtos/excluir{id}', [ProdutoController::class, 'index']);
